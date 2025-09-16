@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty - Bebidas Naturales y Refrescantes</title>
+    <link rel="stylesheet" href="assets/estilos/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- icono en pestaña -->
+    <link rel="icon" type="image/png" href="assets/media/icono.jpg">
+
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <span class="logo-t">T</span>
+                    <span class="logo-a">a</span>
+                    <span class="logo-s">s</span>
+                    <span class="logo-t2">t</span>
+                    <span class="logo-y">y</span>
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#productos" class="nav-link">Productos</a></li>
+                    <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li class="nav-item">
+                        <button class="cart-btn" id="cart-toggle">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrito de compras -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Los productos del carrito se añadirán aquí dinámicamente -->
+            <div class="empty-cart-message">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Tu carrito está vacío</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <button class="whatsapp-btn" id="whatsapp-order">
+                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Jugos Naturales <span>Con Sabor a Tradición</span></h1>
+            <p class="hero-description">Disfruta de nuestras deliciosas bebidas naturales, preparadas con frutas frescas y recetas tradicionales.</p>
+            <a href="#productos" class="cta-button">Descubrir Sabores</a>
+        </div>
+        <div class="hero-image">
+            <div class="juice-bottle"></div>
+        </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros <span>Productos</span></h2>
+            <p class="section-subtitle">Descubre nuestra variedad de sabores refrescantes</p>
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="tradicional">Tradicionales</button>
+                <button class="filter-btn" data-filter="tropical">Tropicales</button>
+                <button class="filter-btn" data-filter="citrico">Cítricos</button>
+            </div>
+            <div class="products-grid" id="products-container">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre <span>Nosotros</span></h2>
+                    <p>En Tasty, nos dedicamos a crear las bebidas más refrescantes y naturales, utilizando frutas frescas y recetas tradicionales que han pasado de generación en generación.</p>
+                    <p>Nuestra misión es llevar hasta tu mesa el auténtico sabor de las bebidas naturales, sin conservantes ni colorantes artificiales, para que disfrutes de lo mejor de la naturaleza en cada sorbo.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h3>100% Natural</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mortar-pestle"></i>
+                            <h3>Hecho a Mano</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h3>Lleno de Sabor</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/media/imagenesproduction.png" alt="Nuestro proceso de preparación">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáct<span>anos</span></h2>
+            <p class="section-subtitle">¿Tienes preguntas o quieres hacer un pedido? ¡Escríbenos!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Av. Principal #123, Ciudad</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+504 9866-4601</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@tasty.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lunes a Sábado: 8am - 8pm</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        <span class="logo-t">T</span>
+                        <span class="logo-a">a</span>
+                        <span class="logo-s">s</span>
+                        <span class="logo-t2">t</span>
+                        <span class="logo-y">y</span>
+                    </h3>
+                    <p>Bebidas naturales con el auténtico sabor de siempre.</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/50498664601" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="#">Horchata</a></li>
+                        <li><a href="#">Jamaica</a></li>
+                        <li><a href="#">Tamarindo</a></li>
+                        <li><a href="#">Maracuyá</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe nuestras novedades y promociones</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Tasty. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/script1.js"></script>
+</body>
+</html>

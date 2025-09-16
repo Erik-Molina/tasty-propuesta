@@ -1,0 +1,92 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Horchata",
+      "precio": "$5.00",
+      "imagen": "assets/media/imagenes/horchata.jpg",
+      "categoria": "tradicional",
+      "descripcion": "Bebida refrescante a base de arroz, canela y vainilla. Disponible en medio galón."
+    },
+    {
+      "id": 2,
+      "nombre": "Limonada de Fresa",
+      "precio": "$4.50",
+      "imagen": "assets/media/imagenes/limonfresa.jpg",
+      "categoria": "citrico",
+      "descripcion": "Combinación perfecta de limón fresco y fresas dulces."
+    },
+    {
+      "id": 3,
+      "nombre": "Nance",
+      "precio": "$4.50",
+      "imagen": "assets/media/imagenes/nance.jpg",
+      "categoria": "tropical",
+      "descripcion": "Bebida exótica con el sabor único y delicioso del nance."
+    },
+    {
+      "id": 4,
+      "nombre": "Tamarindo",
+      "precio": "$4.00",
+      "imagen": "assets/media/imagenes/tamarindo.jpg",
+      "categoria": "tradicional",
+      "descripcion": "Bebida dulce y ácida preparada con tamarindo natural."
+    },
+    {
+      "id": 5,
+      "nombre": "Naranja Agria",
+      "precio": "$4.50",
+      "imagen": "assets/media/imagenes/naranjaagria.jpg",
+      "categoria": "citrico",
+      "descripcion": "Refrescante bebida cítrica con el toque especial de la naranja agria."
+    },
+    {
+      "id": 6,
+      "nombre": "Limonada Natural",
+      "precio": "$4.00",
+      "imagen": "assets/media/imagenes/limon.jpg",
+      "categoria": "citrico",
+      "descripcion": "Clásica limonada natural, perfecta para días calurosos."
+    },
+    {
+      "id": 7,
+      "nombre": "Jamaica",
+      "precio": "$4.00",
+      "imagen": "assets/media/imagenes/jamaica.jpg",
+      "categoria": "tradicional",
+      "descripcion": "Bebida elaborada con flores de jamaica, dulce y refrescante."
+    },
+    {
+      "id": 8,
+      "nombre": "Mora",
+      "precio": "$4.50",
+      "imagen": "assets/media/imagenes/mora.jpg",
+      "categoria": "tropical",
+      "descripcion": "Bebida de mora natural, llena de antioxidantes y sabor."
+    },
+    {
+      "id": 9,
+      "nombre": "Melón",
+      "precio": "$4.50",
+      "imagen": "assets/media/imagenes/melon.jpg",
+      "categoria": "tropical",
+      "descripcion": "Bebida suave y dulce preparada con melón fresco."
+    },
+    {
+      "id": 10,
+      "nombre": "Maracuyá",
+      "precio": "$5.00",
+      "imagen": "assets/media/imagenes/maracuya.jpg",
+      "categoria": "tropical",
+      "descripcion": "Bebida tropical con el sabor intenso y aromático del maracuyá."
+    },
+    {
+      "id": 11,
+      "nombre": "Naranja",
+      "precio": "$4.00",
+      "imagen": "assets/media/imagenes/naranja.jpg",
+      "categoria": "citrico",
+      "descripcion": "Jugo natural de naranja, lleno de vitamina C y frescura."
+    }
+  ]
+}
